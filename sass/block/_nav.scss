@@ -1,0 +1,46 @@
+.nav {
+  padding-top: 35px;
+  padding-bottom: 33px;
+}
+
+.nav_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.navigation_list {
+
+  ul{
+    display: flex;
+  }
+
+  li:not(:last-child){
+    margin-right: 42px;
+  }
+
+  a{
+
+    &:hover{
+      color: $accent_color;
+    }
+
+    &.active{
+      color: $accent_color;
+      font-weight: 700;
+    }
+  }
+}

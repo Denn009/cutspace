@@ -1,0 +1,122 @@
+.testimonials{
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.testimonials_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 250px;
+
+  &_title{
+    width: 612px;
+  }
+
+  p{
+    width: 400px;
+    color: #606060;
+  }
+}
+
+.testimonials_row{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &:after{
+    content:"";
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    background-image: url("../../img/oval_quater.svg")
+  }
+}
+
+.testimonials_card{
+  transition: box-shadow 0.2s ease-in, color 0.2s ease-in;
+
+  .testimonials_card_play{
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transform: translateX(-50%);
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+
+    .testimonials_card_play_svg{
+
+      circle{
+        fill: white;
+        transition: fill 0.2s ease-in;
+      }
+
+      path{
+        fill: $accent_color;
+        transition: fill 0.2s ease-in;
+      }
+
+      &:hover{
+
+        circle{
+          fill: $accent_color;
+        }
+
+        path{
+          fill: white;
+        }
+
+      }
+    }
+  }
+
+  &:hover{
+    box-shadow: (0px 10px 52px rgba(0, 0, 0, 0.08));
+
+    .card_testimonials_city{
+      color: $accent_color;
+    }
+
+    .testimonials_card_play{
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+  }
+
+  p{
+    margin-bottom: 23px;
+  }
+
+  .description{
+    padding: 30px 30px 0 30px;
+    width: 334px;
+  }
+
+  .card_testimonials_name{
+    margin-bottom: 2px;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .card_testimonials_city{
+    padding-left: 30px;
+    color: #58BEBF;
+  }
+}
+
+.testimonials_card_wrapper{
+  position: relative;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.contact{
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 55px;
+  background-image: url("../../img/footer/bg_for_girl.svg");
+  background-size: cover;
+
+  &:before{
+    content:"";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+
+    width: 743px;
+    height: 372px;
+    background-image: url("../../img/footer/bg_oval_girl.svg");
+    background-size: initial;
+  }
+
+  &:after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 56%;
+
+    width: 478px;
+    height: 547px;
+    background-image: url("../../img/footer/girl.png");
+    background-size: initial;
+  }
+}
+
+.contact_info{
+  color: white;
+  max-width: 342px;
+
+  .contact_title{
+    padding-bottom: 15px;
+  }
+
+  p{
+    max-width: 322px;
+    padding-bottom: 30px;
+  }
+
+}

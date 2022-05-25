@@ -1,0 +1,80 @@
+.header {
+}
+
+.header_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_text {
+
+  width: 465px;
+
+  p{
+    line-height: 1.68;
+    margin-bottom: 1em;
+  }
+}
+
+.header_title {
+  position:relative;
+  margin-right: -160px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1.46;
+}
+
+
+.header_img {
+  img{
+    border-radius: 40px 40px 40px 0;
+  }
+}
+
+.form{
+  margin-top: 42px;
+  background: #FFFFFF;
+  box-shadow: 0 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+  height: 58px;
+  transition: box-shadow 0.2s ease-in;
+
+  &--active {
+    box-shadow: 0 17px 42px rgba(247, 132, 52, 0.27);
+  }
+}
+
+.form_label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 72px;
+  height: 100%;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+
+    content: "";
+    display:block;
+    width: 24px;
+    height: 19px;
+    background-image: url("../../img/icon/icon_message.svg");
+    background-size: initial;
+  }
+}
+
+.form_input{
+  flex-grow: 1;
+  margin-right: 10px;
+
+  &::placeholder{
+    color: #BBBBBB;
+  }
+}
+
